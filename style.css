@@ -1,0 +1,280 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#0277bd;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::selection{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+body{
+    background-color: #e3f2fd;
+}
+
+main{
+    width: 80%; 
+    background-color: white; 
+    margin:auto;
+    padding: 20px;
+}
+@media  (max-width:992px) {
+    main{
+        width: 90%;
+    
+    }
+}
+
+h2{
+    color: var(--primary-color);
+    margin-bottom: 45px;
+}
+@media  (max-width:992px) {
+    h2{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+/***************************heading***********************/
+.heading{
+    text-align: center;
+    color: var(--primary-color);
+    & h1{
+        margin-bottom: 10px;
+    }
+}
+@media  (max-width:992px) {
+.heading{
+margin-bottom: 20px;
+}
+}
+/************************about me************************/
+
+
+.aboutcontainer {
+    display: flex;
+    gap: 70px;
+}
+@media  (max-width:992px) {
+    .aboutcontainer{
+        flex-direction: column;
+    }
+}
+
+
+
+.aboutMeLinks{
+    margin-left: 60px;
+    &>img{
+        width: 160px;
+    }
+
+}
+
+@media  (max-width:992px) {
+    .aboutMeLinks{
+        margin: auto;
+    }
+}
+
+.links{
+    display: flex;
+    align-items: center;
+}
+
+.links div {
+    width:40px;
+    & img{
+        width:100%;
+    }
+}
+
+.aboutMeText {
+    & p{
+        margin-bottom: 20px;
+    }
+    & h3{
+        background-color: #e3f2fd;
+        margin-bottom: 20px;
+    }
+    & ul{
+        margin-left: 30px;
+        margin-bottom: 20px;
+        li a{
+        color: var(--primary-color);
+        }
+    }
+
+}
+
+
+/**********************experience***********************/
+.experience{
+    margin-bottom: 50px;
+}
+.tableContent p{
+    text-align: center;
+}
+table{
+    width: 100%;
+    ul{
+        list-style-position: inside;
+    }
+}
+
+@media (max-width: 992px) {
+  .tableContent {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 400px; 
+  }
+}
+
+
+td :where(ul){
+    padding: 20px;
+}
+td{
+    padding: 10px;
+}
+
+table thead{
+    background-color: var(--primary-color);
+    color: white;
+    th{
+        padding: 10px ;
+    }
+}
+
+/**********************contact***********************/
+.contact .contactP{
+    margin-bottom: 60px;
+}
+@media(max-width:992px){
+    .contact .contactP{
+        text-align: center;
+    }
+}
+form.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0; 
+}
+
+.firstForm,
+.seconForm {
+    display: flex;
+    gap: 120px;
+    position: relative;
+    border: 1px solid black; 
+    padding: 20px; 
+    border-radius: 6px;
+}
+
+.firstForm::before {
+    content: "Personal Information";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 160px;
+    height: 20px;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    font-weight: bold;
+}
+
+.seconForm::before {
+    content: "Project Details";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 140px;
+    height: 20px;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    font-weight: bold;
+}
+
+.firstForm .left,
+.firstForm .right,
+.seconForm .left,
+.seconForm .right {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.firstForm .left div,
+.firstForm .right div {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.seconForm .left .projectType,
+.seconForm .right .projectDescription {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.budgetRange div,
+.tracks div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+@media (max-width: 992px) {
+    .firstForm,
+    .seconForm {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .firstForm .left div,
+    .firstForm .right div,
+    .seconForm .right .projectDescription {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/**************************buttons*************************/
+.buttons [type="submit"]{
+    background-color: var(--primary-color);
+    color: white;
+}
+.buttons [type="reset"]{
+    background-color: red;
+    color: white;
+}
+
+button{
+    padding: 2px;
+}
