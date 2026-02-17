@@ -213,24 +213,24 @@ form.contactForm {
     font-weight: bold;
 }
 
-.firstForm .left,
-.firstForm .right,
-.seconForm .left,
-.seconForm .right {
+.firstForm .top,
+.firstForm .bottom,
+.seconForm .top,
+.seconForm .bottom {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.firstForm .left div,
-.firstForm .right div {
+.firstForm .top div,
+.firstForm .bottom div {
     display: flex;
     justify-content: space-between;
     gap: 60px;
 }
 
-.seconForm .left .projectType,
-.seconForm .right .projectDescription {
+.seconForm .top .projectType,
+.seconForm .bottom .projectDescription {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -257,9 +257,9 @@ form.contactForm {
         gap: 20px;
     }
 
-    .firstForm .left div,
-    .firstForm .right div,
-    .seconForm .right .projectDescription {
+    .firstForm .top div,
+    .firstForm .bottom div,
+    .seconForm .bottom .projectDescription {
         flex-direction: column;
         gap: 10px;
     }
