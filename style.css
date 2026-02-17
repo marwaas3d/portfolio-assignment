@@ -176,7 +176,7 @@ form.contactForm {
 }
 
 .firstForm,
-.seconForm {
+.secondForm {
     display: flex;
     gap: 120px;
     position: relative;
@@ -199,7 +199,7 @@ form.contactForm {
     font-weight: bold;
 }
 
-.seconForm::before {
+.secondForm::before {
     content: "Project Details";
     display: flex;
     justify-content: center;
@@ -213,24 +213,24 @@ form.contactForm {
     font-weight: bold;
 }
 
-.firstForm .top,
-.firstForm .bottom,
-.seconForm .top,
-.seconForm .bottom {
+.firstForm .left,
+.firstForm .right,
+.secondForm .left,
+.secondForm .right {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.firstForm .top div,
-.firstForm .bottom div {
+.firstForm .left div,
+.firstForm .right div {
     display: flex;
     justify-content: space-between;
     gap: 60px;
 }
 
-.seconForm .top .projectType,
-.seconForm .bottom .projectDescription {
+.secondForm .left .projectType,
+.secondForm .right .projectDescription {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -252,14 +252,14 @@ form.contactForm {
 
 @media (max-width: 992px) {
     .firstForm,
-    .seconForm {
+    .secondForm {
         flex-direction: column;
         gap: 20px;
     }
 
-    .firstForm .top div,
-    .firstForm .bottom div,
-    .seconForm .bottom .projectDescription {
+    .firstForm .left div,
+    .firstForm .right div,
+    .secondForm .right .projectDescription {
         flex-direction: column;
         gap: 10px;
     }
